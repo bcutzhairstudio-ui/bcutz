@@ -1931,3 +1931,542 @@ a {
         letter-spacing: 4px;
     }
 }
+
+
+/* =========================================================
+   MOBIL FINOMHANGOLÁS – 2026-09-07
+   Csak 700px alatt lép életbe, a desktop nézetet nem érinti.
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    /* FEJLÉC / MOBIL MENÜ */
+
+    .header-container {
+        min-height: 70px;
+    }
+
+    .logo {
+        font-size: 31px;
+        letter-spacing: 1px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        font-size: 27px;
+        line-height: 1;
+        border: 1px solid rgba(200, 164, 93, 0.25);
+        border-radius: 4px;
+    }
+
+    .navigation {
+        top: 70px;
+        padding: 6px 14px 14px;
+        background: rgba(7, 7, 7, 0.985);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.45);
+    }
+
+    .navigation a {
+        width: 100%;
+        padding: 15px 8px;
+        font-size: 11px;
+        letter-spacing: 1.8px;
+    }
+
+    .navigation a:last-child {
+        border-bottom: 0;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 100svh;
+        padding: 105px 0 55px;
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.78),
+                rgba(0, 0, 0, 0.46),
+                rgba(0, 0, 0, 0.78)
+            ),
+            url("images/dollar-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero::before {
+        width: 330px;
+        height: 330px;
+        right: -210px;
+    }
+
+    .hero::after {
+        width: 220px;
+        height: 220px;
+        right: -145px;
+    }
+
+    .hero-content {
+        padding-top: 0;
+    }
+
+    .hero-small {
+        margin-bottom: 14px;
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: clamp(62px, 20vw, 105px);
+        line-height: 0.9;
+        letter-spacing: 1px;
+    }
+
+    .hero .gold-line {
+        width: 75px;
+        margin: 24px auto 18px;
+    }
+
+    .hero-text {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero-description {
+        max-width: 340px;
+        margin: 12px auto 0;
+        padding: 0 8px;
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        max-width: 320px;
+        flex-direction: column;
+        gap: 11px;
+        margin: 28px auto 0;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    /* INTRO */
+
+    .intro-card {
+        padding: 27px 8px;
+        text-align: center;
+    }
+
+    .intro-card h3 {
+        font-size: 25px;
+    }
+
+    .intro-card p {
+        max-width: 320px;
+        margin: 7px auto 0;
+    }
+
+    /* KÖZÖS SZEKCIÓCÍMEK */
+
+    .section-title {
+        margin-bottom: 36px;
+    }
+
+    .section-title h2 {
+        font-size: clamp(39px, 12vw, 52px);
+        line-height: 1.05;
+        letter-spacing: 1px;
+        overflow-wrap: anywhere;
+    }
+
+    .section-title span,
+    .section-subtitle {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .section-heading {
+        margin-bottom: 34px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(40px, 12vw, 56px);
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+
+    .section-heading > p:last-child {
+        max-width: 330px;
+        margin: 14px auto 0;
+        font-size: 13px;
+    }
+
+    /* ÁRLISTA */
+
+    .price-menu {
+        padding: 72px 0;
+    }
+
+    .price-menu-box {
+        width: 100%;
+        padding: 48px 16px 28px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    }
+
+    .price-menu-box::before {
+        inset: 7px;
+    }
+
+    .price-menu-box::after {
+        top: 0;
+        right: 14px;
+        padding: 4px 10px;
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .price-menu-header {
+        padding: 8px 8px 24px;
+    }
+
+    .price-list-title {
+        font-size: clamp(28px, 9vw, 36px);
+        letter-spacing: 3px;
+        line-height: 1.1;
+    }
+
+    .price-item {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 12px;
+        padding: 20px 4px;
+        align-items: center;
+    }
+
+    .price-info {
+        min-width: 0;
+    }
+
+    .price-info h3 {
+        font-size: 22px;
+        line-height: 1.1;
+        letter-spacing: 0.5px;
+    }
+
+    .price-info p {
+        margin-top: 6px;
+        font-size: 10px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .price-value {
+        grid-column: auto;
+        justify-self: end;
+        align-self: center;
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 1.1;
+        text-align: right;
+    }
+
+    .featured-price {
+        margin: 8px 0;
+        padding: 23px 10px 20px;
+    }
+
+    .featured-price .price-value {
+        font-size: 22px;
+    }
+
+    .featured-price::before {
+        top: -8px;
+        right: 7px;
+        font-size: 6px;
+        letter-spacing: 1.3px;
+    }
+
+    .price-corner {
+        width: 16px;
+        height: 16px;
+    }
+
+    .corner-top-left,
+    .corner-top-right {
+        top: 13px;
+    }
+
+    .corner-bottom-left,
+    .corner-bottom-right {
+        bottom: 13px;
+    }
+
+    .corner-top-left,
+    .corner-bottom-left {
+        left: 13px;
+    }
+
+    .corner-top-right,
+    .corner-bottom-right {
+        right: 13px;
+    }
+
+    .price-logo-wrapper {
+        padding: 24px 10px 16px;
+    }
+
+    .price-logo {
+        width: 86px !important;
+        max-width: 86px !important;
+    }
+
+    .price-menu-footer {
+        gap: 8px;
+        margin-top: 25px;
+        padding-top: 20px;
+        font-size: 7px;
+        letter-spacing: 1.6px;
+    }
+
+    /* RÓLUNK */
+
+    .about {
+        padding: 72px 0;
+    }
+
+    .about-grid {
+        gap: 40px;
+    }
+
+    .about-image-frame {
+        min-height: 280px;
+        padding: 25px 15px;
+    }
+
+    .about-image-frame span {
+        font-size: clamp(50px, 18vw, 72px);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .about-image-frame small {
+        font-size: 9px;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: clamp(43px, 13vw, 58px);
+        line-height: 0.96;
+        letter-spacing: 1px;
+    }
+
+    .about-content .gold-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-content p {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .about-content .gold-button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* FOGLALÁS */
+
+    .booking {
+        padding: 72px 0;
+    }
+
+    .booking-frame-wrapper {
+        min-height: 620px;
+        padding: 4px;
+    }
+
+    .booking-frame {
+        height: 620px;
+    }
+
+    .booking-fallback {
+        margin-top: 20px;
+    }
+
+    .booking-fallback p {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .booking-fallback .gold-button {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* KAPCSOLAT */
+
+    .contact {
+        padding: 72px 0;
+    }
+
+    .contact-grid {
+        gap: 12px;
+    }
+
+    .contact-card {
+        min-height: auto;
+        padding: 24px 18px;
+    }
+
+    .contact-card > span {
+        margin-bottom: 10px;
+    }
+
+    .contact-card p {
+        font-size: 13px;
+    }
+
+    .contact-button-wrapper {
+        margin-top: 30px;
+    }
+
+    .contact-button-wrapper .gold-button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 34px 0;
+    }
+
+    .footer-content {
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 30px;
+    }
+
+    .gold-button,
+    .outline-button,
+    .navigation a {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+/* =========================================================
+   EXTRA KICSI TELEFON
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .container {
+        width: calc(100% - 22px);
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding-top: 95px;
+    }
+
+    .hero h1 {
+        font-size: clamp(58px, 19vw, 78px);
+    }
+
+    .hero-small {
+        letter-spacing: 2.3px;
+    }
+
+    .hero-text {
+        font-size: 11px;
+        letter-spacing: 2.4px;
+    }
+
+    .section-title h2 {
+        font-size: clamp(35px, 11vw, 44px);
+    }
+
+    .section-heading h2 {
+        font-size: clamp(37px, 11vw, 47px);
+    }
+
+    .price-menu-box {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .price-list-title {
+        font-size: 27px;
+        letter-spacing: 2px;
+    }
+
+    .price-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .price-value {
+        justify-self: start;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .featured-price .price-value {
+        font-size: 22px;
+    }
+
+    .price-info h3 {
+        font-size: 21px;
+    }
+
+    .about-image-frame span {
+        font-size: 50px;
+    }
+
+    .about-content h2 {
+        font-size: 43px;
+    }
+
+    .price-menu-footer {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
