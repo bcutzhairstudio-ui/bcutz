@@ -2470,3 +2470,16 @@ a {
         gap: 4px;
     }
 }
+/* =========================================================
+   MOBIL - SZOLGÁLTATÁSOK CÍM JAVÍTÁS
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .price-menu .section-title h2 {
+        white-space: nowrap;
+        font-size: clamp(2rem, 9vw, 3rem);
+        letter-spacing: 0.04em;
+    }
+
+}
