@@ -2631,3 +2631,22 @@ a {
         font-size: 23px;
     }
 }
+
+/* =========================================================
+   VÉGLEGES KAPCSOLAT / FÓKUSZ FINOMHANGOLÁS
+   ========================================================= */
+
+.contact-card a {
+    transition: color 0.25s ease;
+}
+
+.contact-card a:hover {
+    color: var(--gold-light);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+}
+
