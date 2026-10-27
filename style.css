@@ -1002,7 +1002,7 @@ a {
 
 
 .about-image-frame {
-    min-height: 300px;
+    min-height: 450px;
 
     display: flex;
 
@@ -2470,16 +2470,164 @@ a {
         gap: 4px;
     }
 }
+
 /* =========================================================
-   MOBIL - SZOLGÁLTATÁSOK CÍM JAVÍTÁS
+   BCUT'Z – HAJAS BALÁZS ALÁÍRÁS
    ========================================================= */
+
+.brand-signature {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+    color: var(--gold-light);
+    pointer-events: none;
+}
+
+/* FEJLÉC */
+
+.brand-logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 4px 0;
+}
+
+.brand-main {
+    display: block;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 0.84;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+.brand-main > span {
+    color: var(--gold);
+}
+
+.brand-logo .brand-signature {
+    margin-top: 5px;
+    font-size: 17px;
+    transform: rotate(-2deg);
+}
+
+/* HERO */
+
+.hero-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-signature {
+    margin-top: 17px;
+    font-size: clamp(30px, 4vw, 44px);
+    color: var(--gold-light);
+    transform: rotate(-3deg);
+    text-shadow: 0 0 16px rgba(200, 164, 93, 0.14);
+}
+
+/* ÁRLISTA */
+
+.price-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-signature {
+    margin-top: 8px;
+    font-size: 23px;
+    color: var(--gold-light);
+    transform: rotate(-2deg);
+}
+
+/* RÓLUNK */
+
+.about-signature {
+    position: relative;
+    z-index: 2;
+    margin: 4px 0 12px;
+    font-size: 31px;
+    color: var(--gold-light);
+    transform: rotate(-2deg);
+}
+
+/* FOOTER */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-signature {
+    margin-top: 3px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    color: var(--gold-light);
+    transform: rotate(-2deg);
+}
+
+/* MOBIL */
 
 @media (max-width: 700px) {
 
-    .price-menu .section-title h2 {
-        white-space: nowrap;
-        font-size: clamp(2rem, 9vw, 3rem);
-        letter-spacing: 0.04em;
+    .brand-main {
+        font-size: 28px;
+        letter-spacing: 1px;
     }
 
+    .brand-logo .brand-signature {
+        margin-top: 4px;
+        font-size: 14px;
+    }
+
+    .hero-signature {
+        margin-top: 11px;
+        font-size: clamp(25px, 8vw, 34px);
+    }
+
+    .price-signature {
+        font-size: 20px;
+    }
+
+    .about-signature {
+        margin-top: 2px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .footer-brand {
+        align-items: center;
+    }
+
+    .footer-signature {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .brand-main {
+        font-size: 26px;
+    }
+
+    .brand-logo .brand-signature {
+        font-size: 13px;
+    }
+
+    .hero-signature {
+        font-size: 26px;
+    }
+
+    .about-signature {
+        font-size: 23px;
+    }
 }
