@@ -15,11 +15,6 @@
         content="BCut'z – prémium barber és hajvágás. Foglalj időpontot online!"
     >
 
-    <meta
-        name="theme-color"
-        content="#070707"
-    >
-
     <title>BCut'z | Hair & Barber Studio</title>
 
 
@@ -36,7 +31,7 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
 
@@ -69,16 +64,21 @@
 
             <a
                 href="#kezdolap"
-                class="logo"
+                class="logo brand-logo"
+                aria-label="BCut'z – Hajas Balázs"
             >
-                <strong>B</strong><span>Cut'z</span>
+                <span class="brand-main">
+                    <strong>B</strong><span>Cut'z</span>
+                </span>
+                <span class="brand-signature">
+                    Hajas Balázs
+                </span>
             </a>
 
 
             <!-- MOBIL MENÜ GOMB -->
 
             <button
-                type="button"
                 class="menu-toggle"
                 id="menu-toggle"
                 aria-label="Menü megnyitása"
@@ -94,7 +94,6 @@
             <nav
                 class="navigation"
                 id="navigation"
-                aria-label="Fő navigáció"
             >
 
                 <a href="#kezdolap">
@@ -152,9 +151,17 @@
                 </p>
 
 
-                <h1>
-                    <strong>B</strong><span>Cut'z</span>
-                </h1>
+                <div class="hero-brand">
+
+                    <h1>
+                        <strong>B</strong><span>Cut'z</span>
+                    </h1>
+
+                    <div class="brand-signature hero-signature">
+                        Hajas Balázs
+                    </div>
+
+                </div>
 
 
                 <div class="gold-line"></div>
@@ -330,7 +337,7 @@
 
                             <p>
                                 Klasszikus vagy modern
-                                hajvágás, személyre szabva, hajmosással.
+                                hajvágás, személyre szabva, hajmosással
                             </p>
 
                         </div>
@@ -357,8 +364,8 @@
                             </h3>
 
                             <p>
-                                Komplett barber szolgáltatás:
-                                haj- és szakálligazítás, hajmosással.
+                                Komplett barber szolgáltatás
+                                haj- és szakálligazítás, hajmosással
                             </p>
 
                         </div>
@@ -414,7 +421,7 @@
 
                             <p>
                                 Frissítő hajmosás
-                                önállóan vagy kiegészítő szolgáltatásként.
+                                a szolgáltatás után.
                             </p>
 
                         </div>
@@ -467,7 +474,7 @@
                             </h3>
 
                             <p>
-                                Vendégeink számára a szolgáltatás mellé.
+                                Vendégeink számára a szolgáltatás mellé
                             </p>
 
                         </div>
@@ -486,16 +493,23 @@
 
                     <div class="price-logo-wrapper">
 
-                        <img
-                            src="images/logo.jpg"
-                            alt="BCut'z logo"
-                            class="price-logo"
-                        >
+                        <div class="price-brand">
+
+                            <img
+                                src="images/logo.jpg"
+                                alt="BCut'z logo"
+                                class="price-logo"
+                            >
+
+                            <div class="brand-signature price-signature">
+                                Hajas Balázs
+                            </div>
+
+                        </div>
 
                     </div>
 
-
-                    <!-- =====================================
+<!-- =====================================
                          ÁRLISTA LÁBLÉC
                          ===================================== -->
 
@@ -545,6 +559,10 @@
                             BCUT'Z
                         </span>
 
+                        <div class="brand-signature about-signature">
+                            Hajas Balázs
+                        </div>
+
                         <small>
                             HAIR & BARBER
                         </small>
@@ -554,55 +572,50 @@
                 </div>
 
 
-               <!-- SZÖVEG -->
+                <!-- SZÖVEG -->
 
-<div class="about-content">
+                <div class="about-content">
 
-    <span class="section-label">
-        ABOUT BCUT'Z
-    </span>
+                    <span class="section-label">
+                        ABOUT BCUT'Z
+                    </span>
 
-    <h2>
-        Ahol a stílus találkozik a karakterrel
-    </h2>
 
-    <div class="gold-line"></div>
+                    <h2>
+                        NEM CSAK
+                        <br>
+                        HAJVÁGÁS.
+                    </h2>
 
-    <p>
-        A BCut’z az a hely, ahol a stílus, a karakter
-        és a friss elegancia találkozik.
-    </p>
 
-    <p>
-        Legyen szó egy átlagos hétköznapról,
-        egy fontos eseményről, születésnapról,
-        családi összejövetelről vagy egyszerűen
-        csak egy hosszú hét lezárásáról –
-        nálam mindig Te vagy a főszerepben.
-    </p>
+                    <div class="gold-line"></div>
 
-    <p>
-        A BCut’z nem csupán egy hajvágás
-        vagy egy szakálligazítás.
-    </p>
 
-    <p>
-        Ez egy életérzés. Egy magasabb szint.
-        Egy új vibe.
-    </p>
+                    <p>
+                        A BCut'z célja egyszerű:
+                        olyan helyet létrehozni,
+                        ahol a jó hajvágás mellett
+                        a hangulat is számít.
+                    </p>
 
-    <p>
-        Lépj be. Ülj le. A többit bízd rám.
-    </p>
 
-    <a
-        href="#foglalas"
-        class="gold-button"
-    >
-        FOGLALOK IDŐPONTOT
-    </a>
+                    <p>
+                        Legyen szó egy gyors
+                        frissítésről vagy egy teljes
+                        stílusváltásról, nálunk a
+                        részletek kapják a főszerepet.
+                    </p>
 
-</div>
+
+                    <a
+                        href="#foglalas"
+                        class="gold-button"
+                    >
+                        FOGLALOK IDŐPONTOT
+                    </a>
+
+                </div>
+
             </div>
 
         </section>
@@ -645,7 +658,7 @@
                 <div class="booking-frame-wrapper">
 
                     <iframe
-                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ27cSb4EqcH4mxbnbUrXvdmjqpWvpWDYx_qQdm6ZnFbpC_WZvinh6Ipvd5EB0o5kJuQ6iu4yhLA?gv=true"
+                        src="IDE_MÁSOLANDÓ_A_GOOGLE_FOGLALÁSI_LINK"
                         class="booking-frame"
                         title="BCut'z online időpontfoglalás"
                         loading="lazy"
@@ -663,11 +676,12 @@
                         nyisd meg külön oldalon.
                     </p>
 
+
                     <a
-                        href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ27cSb4EqcH4mxbnbUrXvdmjqpWvpWDYx_qQdm6ZnFbpC_WZvinh6Ipvd5EB0o5kJuQ6iu4yhLA?gv=true"
-                        class="gold-button"
+                        href="IDE_MÁSOLANDÓ_A_GOOGLE_FOGLALÁSI_LINK"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="gold-button"
                     >
                         📅 IDŐPONTFOGLALÁS MEGNYITÁSA
                     </a>
@@ -726,9 +740,9 @@
                         </h3>
 
                         <p>
-                            Ács
+                            Tatabánya
                             <br>
-                            Posta köz 9
+                            Magyarország
                         </p>
 
                     </div>
@@ -747,7 +761,7 @@
                         </h3>
 
                         <p>
-                            +36 30 618 9106
+                            +36 30 123 4567
                         </p>
 
                     </div>
@@ -757,21 +771,17 @@
 
                     <div class="contact-card">
 
-                     <span>
-        ✂️
-    </span>
+                        <span>
+                            📸
+                        </span>
 
-    <h3>
-        BARBER
-    </h3>
+                        <h3>
+                            INSTAGRAM
+                        </h3>
 
-    <p>
-        Hajas Balázs
-        <br>
-        (Csoki)
-    </p>
-
-
+                        <p>
+                            @bcutz
+                        </p>
 
                     </div>
 
@@ -789,7 +799,7 @@
                         </h3>
 
                         <p>
-                            Bejelentkezés alapján
+                            Előre foglalt időpontok szerint.
                         </p>
 
                     </div>
@@ -830,14 +840,19 @@
 
             <!-- BAL OLDAL -->
 
-            <div>
+            <div class="footer-brand">
 
                 <a
                     href="#kezdolap"
                     class="footer-logo"
+                    aria-label="BCut'z – Hajas Balázs"
                 >
                     BCUT<span>'</span>Z
                 </a>
+
+                <div class="brand-signature footer-signature">
+                    Hajas Balázs
+                </div>
 
                 <p>
                     CUT DIFFERENT.
